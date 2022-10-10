@@ -13,3 +13,6 @@ jobs:
 
     - name: Run end to end tests
       run: npm run e2e-test
+
+    - name: Run external login test
+      run: npm run external-tests
