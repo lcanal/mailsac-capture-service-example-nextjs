@@ -15,7 +15,7 @@ const screen = {
   try {
     await driver.get('http://localhost:3000');
     let didSendButtonRender = await driver.findElement(By.id('sendbutton')).isDisplayed()
-    if (!didSendButtonRender){
+    if (didSendButtonRender){
       throw new Error(`Send button was not rendered properly.`);
     }
  
