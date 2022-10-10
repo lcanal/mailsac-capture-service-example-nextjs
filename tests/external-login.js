@@ -27,9 +27,6 @@ const screen = {
     if (!errorText.includes('Unable to login')){
       throw new Error(`Error text does not contain expected value "${errorText}"`);
     }
-
-  } catch(e) {
-    console.error(`Error running test suite: ${e.message}`)
   }
   finally {
     await driver.quit();
