@@ -6,7 +6,7 @@ const screen = {
   height: 1080
 };
 
-(async function example() {
+(async function buttonRender() {
   let driver = await new Builder()
     .forBrowser(Browser.CHROME)
     .setChromeOptions(new chrome.Options().headless().windowSize(screen))
