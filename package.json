@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "SELENIUM_BROWSER=chrome node tests/button-render.js"
+    "test": "node tests/button-render.js"
   },
   "dependencies": {
     "@headlessui/react": "^1.6.6",
