@@ -17,7 +17,7 @@ const screen = {
   try {
     await driver.get('https://dev.to');
     await driver.findElement(By.linkText('Log in')).click();
-    await driver.wait(until.titleContains('Welcome - DEV Community'), 3000);
+    await driver.wait(until.titleContains('Welcome! - DEV Community'), 3000);
     await driver.findElement(By.name('commit')).click();
     await driver.wait(until.titleIs(''), 3000);
     let errorBox = await driver.findElement(By.className('registration__error-notice'));
