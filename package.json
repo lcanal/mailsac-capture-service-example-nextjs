@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "node tests/button-render.js",
+    "test": "node tests/button-render.js && node tests/external-login.js",
     "e2e-test": "start-server-and-test dev http://localhost:3000 test"
   },
   "dependencies": {
