@@ -14,3 +14,10 @@ Starting is the usual fare
 Then open http://localhost:3000 with your browser to see the result.
 
 Don't forget to configure your `.env` file.
+
+### Testing
+This repo uses selenium testing for browser testing. To run the tests, run:
+
+    npm run e2e-test
+
+And it will both run your next app and the selenium test scripts.
