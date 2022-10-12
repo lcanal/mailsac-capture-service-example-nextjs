@@ -7,8 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "node tests/button-render.js",
     "external-tests": "node tests/external-login.js",
+    "test": "node tests/button-render.js && npm run mail-tests",
+    "mail-tests": "node tests/email-send.js && node tests/email-read.js",
     "e2e-test": "start-server-and-test dev http://localhost:3000 test"
   },
   "dependencies": {
