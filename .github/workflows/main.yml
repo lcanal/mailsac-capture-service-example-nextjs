@@ -11,10 +11,13 @@ jobs:
     - uses: actions/checkout@v1
     - run: npm ci  
 
+    - name: Create env file
+      run: |
+        touch .env
+        echo MAILSAC_API_KEY=${{ secrets.MAILSAC_API_KEY }} >> .env
+
     - name: Run end to end tests
       run: npm run e2e-test
-      env:
-        MAILSAC_API_KEY: ${{secrets.MAILSAC_API_KEY}}
 
     - name: Run external login test
       run: npm run external-tests
