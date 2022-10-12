@@ -1,6 +1,6 @@
 require('dotenv').config()
 
-const superagent = require('superagent')
+const superagent = require('superagent');
 const mailsac_api_key = process.env.MAILSAC_API_KEY;
 const expected_message = 'This is some text from our Selenium test.';
 const testInbox = 'sampleapptest@mailsac.com';

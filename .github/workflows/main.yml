@@ -13,6 +13,8 @@ jobs:
 
     - name: Run end to end tests
       run: npm run e2e-test
+      env:
+        MAILSAC_API_KEY: ${{secrets.MAILSAC_API_KEY}}
 
     - name: Run external login test
       run: npm run external-tests
